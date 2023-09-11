@@ -1,0 +1,17 @@
+name: hexlet-ci-app
+on: [push, workflow_dispatch]
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup
+        run: make setup
+      - name: start
+        run: make start
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
+     
+     
