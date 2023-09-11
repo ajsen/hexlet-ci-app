@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: setup
-        run: make setup
+        run: install build
       - name: start
-        run: make start
+        run: npm install
       - name: lint
-        run: make lint
+        run: npx eslint .
       - name: test
-        run: make test
+        run: npm test
      
      
