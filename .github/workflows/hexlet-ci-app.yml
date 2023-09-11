@@ -5,6 +5,8 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
+      - name: install make
+        run: sudo apt install make
       - name: setup
         run: install build
       - name: start
