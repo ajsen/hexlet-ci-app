@@ -8,12 +8,12 @@ jobs:
       - name: install make
         run: sudo apt install make
       - name: setup
-        run: install build
+        run: make setup
       - name: start
-        run: npm install
+        run: make start
       - name: lint
-        run: npx eslint .
+        run: make lint
       - name: test
-        run: npm test
+        run: make test
      
      
